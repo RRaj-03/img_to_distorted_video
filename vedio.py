@@ -11,14 +11,6 @@ Image_data = numpy.asarray(image)
 tel=Image.open("televizor.jpg")
 vedio = cv2.VideoWriter("video.avi",cv2.VideoWriter_fourcc(*'DIVX'),7,tel.size)
 zero = [len(Image_data[0][0])*list([0])]*len(Image_data[0])
-# for k in range(90):
-#     frame = Image_data.copy()
-#     frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-#     for i in range(len(Image_data)//10):
-#         for j in range(randint(0,10)):
-#             frame[(10*i)+j] = zero
-#     vedio.write(frame)
-# vedio.release()
        
 for k in range(90):
     frame = Image_data.copy()
